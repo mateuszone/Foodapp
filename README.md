@@ -2,6 +2,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Note](#note)
 
 ## General info
 This is a simple app on which you can plan your meals, orginally developed in Polish Language. You can store your recipies
