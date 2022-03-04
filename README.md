@@ -42,14 +42,41 @@ Then install the project dependencies:
 $ pip install -r requirements.txt
 ```
 
+In scrumlab directory create local_settings.py, you can use code below or configure different db_system
+
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
+}
+```
+
+Now you have to makemigrations and then migrate:
+
+```
+$ python manage.py makemigrations
+$ python manage.py migrate
+
+```
+
+
+Create superuser:
+
+```
+$ python manage.py createsuperuser
+```
+
 Now you can run the project with this command:
 
 ```
 $ python manage.py runserver
 ```
 
-Note in the settings file you should complete your own database settings.
-Source
+Note:
+in the settings file you should complete your own database settings.
+To makeapp fully working add some records from /admin site or shell because some views need last_created_record so there is need to have at least one to be make that app work.
 
 
 
