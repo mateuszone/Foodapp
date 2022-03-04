@@ -76,7 +76,7 @@ $ python manage.py runserver
 
 ## Note
 in the settings file you should complete your own database settings.</br>
-To makeapp fully working add some records from /admin site or shell because some views need last_created_record so there is need to have at least one to be make that app work.
+To makeapp fully working add some records from /admin site or shell because some views need last_created_record so there is need to have at least one to make that app fully functional.
 
 
 
